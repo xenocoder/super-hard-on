@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1520,6 +1520,40 @@ grid 2.54 mm</description>
 <rectangle x1="2.286" y1="-0.254" x2="4.191" y2="0.254" layer="21"/>
 <rectangle x1="-4.191" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
 </package>
+<package name="LED3MM">
+<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
+3 mm, round</description>
+<wire x1="1.143" y1="1.27" x2="1.524" y2="1.651" width="0.127" layer="21" curve="90"/>
+<wire x1="1.524" y1="1.651" x2="2.54" y2="1.651" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.651" x2="2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.778" x2="1.524" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="1.524" y1="-1.778" x2="1.524" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="1.524" y1="-1.651" x2="1.143" y2="-1.27" width="0.127" layer="21" curve="90"/>
+<wire x1="-1.397" y1="1.27" x2="1.143" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.397" y1="1.27" x2="-2.667" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="1.143" y1="-1.27" x2="-1.397" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.397" y1="-1.27" x2="-2.667" y2="0" width="0.127" layer="21" curve="-90"/>
+<pad name="A" x="-1.27" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="K" x="1.27" y="0" drill="1" diameter="2"/>
+<text x="0.889" y="-1.778" size="0.8128" layer="25" ratio="12" rot="R180">&gt;NAME</text>
+</package>
+<package name="LED5MM">
+<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
+5 mm, round</description>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
+<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<pad name="A" x="-1.905" y="0" drill="1" diameter="2"/>
+<pad name="K" x="1.27" y="0" drill="1" diameter="2" shape="square"/>
+<text x="3.175" y="0.5334" size="1.27" layer="25" ratio="12">&gt;NAME</text>
+<text x="3.2004" y="-1.8034" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ZD">
@@ -1534,6 +1568,28 @@ grid 2.54 mm</description>
 <text x="-1.778" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="LED">
+<wire x1="2.54" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.778" y1="2.032" x2="0.381" y2="3.429" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="1.905" x2="-0.762" y2="3.302" width="0.1524" layer="94"/>
+<text x="-2.032" y="-3.556" size="1.778" layer="95">&gt;NAME</text>
+<pin name="C" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="A" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="0.381" y="3.429"/>
+<vertex x="1.27" y="3.048"/>
+<vertex x="0.762" y="2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.762" y="3.302"/>
+<vertex x="0.127" y="2.921"/>
+<vertex x="-0.381" y="2.413"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1569,6 +1625,31 @@ grid 2.54 mm</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED" prefix="D">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="3MM" package="LED3MM">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5MM" package="LED5MM">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1805,7 +1886,6 @@ grid 2.54 mm</description>
 <part name="OUT" library="mb_supply" deviceset="OUT(T)" device=""/>
 <part name="+9V" library="mb_supply" deviceset="+9V(T)" device=""/>
 <part name="GND" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="GND2" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND3" library="gm-supply" deviceset="GND" device=""/>
 <part name="R1" library="mb_resistors" deviceset="6MM" device=".3" value="10M"/>
 <part name="R3" library="mb_resistors" deviceset="6MM" device=".3" value="5k1"/>
@@ -1819,7 +1899,9 @@ grid 2.54 mm</description>
 <part name="C2" library="mb_caps-electro" deviceset="063" device="1" value="47uF"/>
 <part name="GND4" library="gm-supply" deviceset="GND" device=""/>
 <part name="R5" library="mb_resistors" deviceset="6MM" device=".3" value="2k2"/>
-<part name="LED" library="mb_supply" deviceset="PAD" device="" value="3mm"/>
+<part name="L" library="mb_supply" deviceset="PAD" device="" value="3mm"/>
+<part name="LED" library="mb_diodes" deviceset="LED" device="3MM"/>
+<part name="G" library="mb_supply" deviceset="GND(T)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1833,7 +1915,6 @@ V 1.1 11.2013</text>
 <instance part="OUT" gate="G$1" x="71.12" y="76.2"/>
 <instance part="+9V" gate="+9V" x="40.64" y="96.52"/>
 <instance part="GND" gate="GND" x="27.94" y="27.94"/>
-<instance part="GND2" gate="GND" x="68.58" y="43.18"/>
 <instance part="GND3" gate="GND" x="40.64" y="27.94"/>
 <instance part="R1" gate="G$1" x="27.94" y="71.12" rot="R90"/>
 <instance part="R3" gate="G$1" x="40.64" y="81.28" rot="R90"/>
@@ -1847,7 +1928,9 @@ V 1.1 11.2013</text>
 <instance part="C2" gate="G$1" x="27.94" y="88.9" rot="R270"/>
 <instance part="GND4" gate="GND" x="15.24" y="81.28"/>
 <instance part="R5" gate="G$1" x="53.34" y="88.9"/>
-<instance part="LED" gate="G$1" x="66.04" y="88.9"/>
+<instance part="L" gate="G$1" x="78.74" y="88.9"/>
+<instance part="LED" gate="G$1" x="68.58" y="88.9" rot="R180"/>
+<instance part="G" gate="GND" x="68.58" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -1860,11 +1943,6 @@ V 1.1 11.2013</text>
 </segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<pinref part="GND2" gate="GND" pin="GND"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="45.72" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="POT1" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="GND" pin="GND"/>
@@ -1885,6 +1963,11 @@ V 1.1 11.2013</text>
 <pinref part="GND4" gate="GND" pin="GND"/>
 <wire x1="22.86" y1="88.9" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="88.9" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="45.72" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="G" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="+9V" class="0">
@@ -1953,8 +2036,15 @@ V 1.1 11.2013</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="LED" gate="G$1" pin="PAD"/>
+<pinref part="LED" gate="G$1" pin="A"/>
 <wire x1="58.42" y1="88.9" x2="63.5" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="LED" gate="G$1" pin="C"/>
+<pinref part="L" gate="G$1" pin="PAD"/>
+<wire x1="71.12" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
