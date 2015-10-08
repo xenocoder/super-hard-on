@@ -1,0 +1,26 @@
+Partlist
+
+Exported from SHO-V1.1.brd at 12/2/2013 8:02:25 PM
+
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value          Package       Library          Position (inch)       Orientation
+
++9V      +9V(T)         SQUARE        mb_supply        (0.75 0.95)           R0
+C1       100nF          075X030       mb_caps-chicklet (0.125 0.7)           R270
+C2       47uF           063_025       mb_caps-electro  (0.45 0.75)           R0
+C3       10uF           063_025       mb_caps-electro  (0.175 0.2)           R0
+D1       9.1Zener       DO35-3        mb_diodes        (0.45 0.55)           R180
+GND      GND(T)         SQUARE        mb_supply        (0.9 0.075)           R0
+IN       IN(T)          SQUARE        mb_supply        (0.075 0.95)          R0
+LED      3mm            SQUARE        mb_supply        (0.9 0.95)            R0
+OUT      OUT(T)         SQUARE        mb_supply        (0.325 0.075)         R0
+POT1     C5k            16MM_PCB_PADS mb_pots          (0.4 0.95)            R0
+Q1       BS170          SOT54ES       mb_trans         (0.4 0.3)             R90
+R1       10M            R0207/3       mb_resistors     (0.75 0.3)            R0
+R2       10M            R0207/3       mb_resistors     (0.75 0.425)          R180
+R3       5k1            R0207/3       mb_resistors     (0.75 0.7)            R90
+R4       100k           R0207/3       mb_resistors     (0.6 0.075)           R180
+R5       2k2            R0207/3       mb_resistors     (0.9 0.7)             R90
